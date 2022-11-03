@@ -1,0 +1,174 @@
+.footer {
+    width: 100%;
+    max-height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@media(max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: fit-content;
+    }
+}
+
+
+.f_block__title {
+    font-family: 'Aeroport';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.f_block__buttons {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.f_block__buttons button {
+    width: 100px;
+    height: 50px;
+    background: #0E1821;
+}
+
+
+.f_block__buttons button:first-child {
+    background: #1D3449;
+}
+
+.f_block__buttons img {
+    height: 30px;
+}
+
+@media(max-width: 1024px) {
+    .f_block__buttons {
+        display: flex;
+    }
+    
+    .f_block__buttons button {
+        width: auto;
+        height: auto;
+        background: #0E1821;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .f_block__buttons img {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+.f_block__subtitle {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 1024px) {
+    .f_block__subtitle {
+        display: none;
+    }
+}
+
+.subtitle__text {
+    font-family: 'Aeroport';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #5C5C5C;
+}
+
+.subtitle__buttons {
+    margin-left: 10px;
+}
+
+.subtitle__buttons button {
+    font-family: 'Aeroport';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+    padding: 15px;
+
+    background: #405B74;
+    border-radius: 5px;
+}
+
+.subtitle__buttons span {
+    font-family: 'Menoe Grotesque Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.footer__block:last-child {
+    display: flex;
+    align-items: center;
+    max-height: 70px;
+}
+
+.footer__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__item:first-child {
+    font-family: 'Aeroport';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 20px 30px;
+    background-color: #1D2731;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+
+.footer__item:last-child {
+    font-family: 'Squartiqa 4F';
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #B42A40;
+    
+}
+
+@media(max-width: 1024px) {
+    .footer__block:last-child {
+        margin-top: 10px;
+        flex-direction: column;
+        max-height: fit-content;
+    }
+    .footer__item:first-child {
+        font-size: 16px;
+        line-height: 33px;
+        padding: 10px 20px;
+        margin-right: 0;
+    }
+    .footer__item:last-child {
+        font-size: 40px;
+        margin-top: 10px;
+        line-height: auto;
+    }
+    
+}

@@ -1,0 +1,234 @@
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__logo {
+    max-width: 300px;
+}
+
+@media(max-width: 1024px) {
+    .form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .form__logo {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+
+.form__title {
+    font-family: 'Aeroport';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #BEBEBE;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.form__checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Aeroport';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form__checkboxes label {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.form__buttons {
+    display: flex;
+}
+
+.form__buttons button {
+    width: 320px;
+    height: 65px;
+    font-family: 'Squartiqa 4F';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form__buttons button:first-child {
+    background: url('./images/red.png') 0 0/cover no-repeat;
+    margin-right: 50px;
+
+    color: #FFFFFF;
+}
+
+.form__buttons button:last-child {
+    border: 4px solid #B42A40;
+    color: #B42A40;
+    background-color: transparent;
+}
+
+@media(max-width: 1024px) {
+    .form__buttons {
+        flex-direction: column;
+    }
+
+    .form__buttons button {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .form__buttons button:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.form__ad {
+    background: url('./images/bg_witcher.png') 0 0/cover no-repeat;
+    width: 700px;
+    height: 110px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f_ad__text {
+    font-family: 'Aeroport';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.f_ad__body {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.f_ad__app {
+     background-color: #FFFFFF;
+     padding: 10px;
+}
+
+.f_ad__app:first-child {
+    margin-right: 20px;
+}
+
+
+.f_ad__qr {
+    width: 44px;
+}
+
+.f_ad__img {
+    width: 145px;
+    height: auto;
+}
+
+@media(max-width: 1024px) {
+    .form__ad {
+        width: auto;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .f_ad__text {
+        font-size: 18px;
+        line-height: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+        word-wrap: inherit;
+    }
+    
+    .f_ad__body {
+        flex-direction: column;
+    }
+    
+    .f_ad__app {
+         padding: 10px;
+    }
+    
+    .f_ad__app:first-child {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .f_ad__qr {
+        width: 22px;
+    }
+    
+    .f_ad__img {
+        width: 72px;
+        height: auto;
+    }
+}
+
+
+.form__body {
+    padding-right: 20px;
+    height: fit-content;
+}
+
+.form__body div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__body input {
+    font-family: 'Aeroport';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+    /* identical to box height */
+    color: #FFFFFF;
+    opacity: 0.9;
+    padding: 10px;
+    background: #1E1E1E;
+    border: 1.67755px solid #FFFFFF;
+}
+
+@media(max-width: 1024px) {
+    .form__body {
+        padding-right: 0px;
+    }
+    
+    .form__body div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

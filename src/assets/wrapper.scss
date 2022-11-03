@@ -1,0 +1,84 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+    background-color: #B42A40;
+    padding: 32px;
+}
+
+@media(max-width: 1024px) {
+    #app {
+        padding: 0px;
+        height: fit-content;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: url('./images/black.png') 0 0/cover no-repeat;
+}
+
+.wrapper__inner {
+    width: 100%;
+    height: 100%;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media(max-width: 1024px) {
+    .wrapper {
+        height: fit-content;
+    }
+    .wrapper__inner {
+        padding: 15px;
+        justify-content: space-between;
+        height: fit-content;
+    }
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@media(max-width: 1024px) {
+    .content {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.number {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.number span {
+    font-family: 'Squartiqa 4F UltraLight';
+    display: block;
+    color: #B42A40;
+    font-size: 25vw;
+}
+
+@media(max-width: 1024px) {
+    .number {
+        display: none;
+    }
+    
+    .number span {
+        display: none;
+    }
+}
